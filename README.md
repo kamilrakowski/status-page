@@ -1,4 +1,4 @@
-Flashii Status Page
+status-page
 ===========
 
-Status page for the Flashii Status page located at http://status.flashii.net/
+Source of the Flashii Status page
