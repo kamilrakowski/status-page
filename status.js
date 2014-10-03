@@ -39,7 +39,7 @@ function addStatusLine(name, url, response) {
 		var responseCode = response;
 	}
 	
-	$('#indicator').before('<tr class="' + status + ' statusBar"><td>' + name + '</td><td><a href="' + url + '" target="_blank">' + url + '</a></td><td><b>' + statusText + '</b></td><td>' + responseCode + '</td></tr>');
+	$('#indicator').before('<tr class="' + status + ' statusBar"><td>' + name + '</td><td><a href="' + (/http(s):\/\//i.exec(url) ? url : 'http://' + url) + '" target="_blank">' + url + '</a></td><td><b>' + statusText + '</b></td><td>' + responseCode + '</td></tr>');
 }
 
 function getHTTPd(arr) {
