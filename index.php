@@ -5,8 +5,8 @@ function getHeaders($url) {
 	curl_setopt($curl,	CURLOPT_URL,			$url);
 	curl_setopt($curl,	CURLOPT_HEADER,			true);
 	curl_setopt($curl,	CURLOPT_NOBODY,			true);
-	curl_setopt($curl,	CURLOPT_RETURNTRANSFER,		true);
-	curl_setopt($curl,	CURLOPT_CONNECTTIMEOUT,		2);
+	curl_setopt($curl,	CURLOPT_RETURNTRANSFER,	true);
+	curl_setopt($curl,	CURLOPT_CONNECTTIMEOUT,	2);
 	curl_setopt($curl,	CURLOPT_TIMEOUT,		4);
 	curl_setopt($curl,	CURLOPT_USERAGENT,		'Mozilla/5.0 (compatible; FlashiiStatus/2.0)');
 	
@@ -19,6 +19,12 @@ function getHeaders($url) {
 
 if(isset($_GET['url'])) {
 	print getHeaders($_GET['url']);
+	exit;
+}
+
+if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
+	header('Location: /index.php');
+	print '<meta http-equiv="refresh" content="0; url=/index.php" />';
 	exit;
 }
 ?> 
