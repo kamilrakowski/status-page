@@ -27,7 +27,7 @@ function getServerType(arr) {
 function addStatusLine(name, url, response) {
 	if(response == 200 || response == 302) {
 		var status = 'online';
-		var statusText = '<div style="display: inline-block; font-size: 2em;">WORLD WIDE ONLINE !</div>';
+		var statusText = 'Online';
 		var responseCode = response;
 	} else if(response == 'fail') {
 		var status = 'offline';
