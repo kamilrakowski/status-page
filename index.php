@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 function getHeaders($url) {
 	$curl = curl_init();
 	
