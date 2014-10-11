@@ -3,7 +3,7 @@
 error_reporting(0);
 
 // Load sites.json
-$sites = json_decode('sites.json', true);
+$sites = json_decode(file_get_contents('sites.json'), true);
 
 // Function to get the HTTP Headers of the specified domain
 function getHeaders($url) {
