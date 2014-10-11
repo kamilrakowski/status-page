@@ -1,6 +1,11 @@
 <?php
+// Disable error reporting
 error_reporting(0);
 
+// Load sites.json
+$sites = json_decode('sites.json', true);
+
+// Function to get the HTTP Headers of the specified domain
 function getHeaders($url) {
 	$curl = curl_init();
 	
@@ -19,11 +24,13 @@ function getHeaders($url) {
 	return $curl;
 }
 
-if(isset($_GET['url'])) {
+// Get Headers if GET url is set and if the URL is in sites.json
+if(isset($_GET['url']) && in_array($_GET['url'], $sites)) {
 	print getHeaders($_GET['url']);
 	exit;
 }
 
+// Redirect back to self so things don't kill itself (e.g. JavaScript things)
 if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
 	header('Location: /index.php');
 	print '<meta http-equiv="refresh" content="0; url=/index.php" />';
