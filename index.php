@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
 			</tbody>
 		</table>
 		<div class="copyright">
-			&copy;<a href="http://flash.moe/" target="_blank">Flashii Media</a> 2013-2014 | <a href="LICENSE">License</a> | <a href="https://github.com/flashii/status-page">Github</a> | <span title="Version number"><?=file_get_contents('version');?></span>
+			Copyright &copy; 2013-2014 <a href="http://flash.moe/" target="_blank">Flashii Media</a> | <a href="LICENSE">License</a> | <a href="https://github.com/flashii/status-page">Github</a> | <span title="Version number"><?=file_get_contents('version');?></span>
 		</div>
 	</body>
 </html>
