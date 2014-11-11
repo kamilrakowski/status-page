@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
 	print '<meta http-equiv="refresh" content="0; url=' . $_SERVER['PHP_SELF'] . '" />';
 	exit;
 }
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
