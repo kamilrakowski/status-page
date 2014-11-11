@@ -32,8 +32,8 @@ if(isset($_GET['url']) && in_array($_GET['url'], $sites)) {
 
 // Redirect back to self so things don't kill itself (e.g. JavaScript things)
 if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
-	header('Location: /index.php');
-	print '<meta http-equiv="refresh" content="0; url=/index.php" />';
+	header('Location: ' . $_SERVER['PHP_SELF']);
+	print '<meta http-equiv="refresh" content="0; url=' . $_SERVER['PHP_SELF'] . '" />';
 	exit;
 }
 ?> 
