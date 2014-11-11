@@ -6,6 +6,11 @@ ErrorDocument 500 /index.php
 # Set DirectoryIndex properly
 DirectoryIndex index.php
 
-# Don't need cookies for this anywhere so kill them. (requires mod_headers)
-Header unset Cookie
-Header unset Set-Cookie
+# If mod_headers is available
+<IfModule mod_headers.c>
+	# Disable Cookies
+	Header unset Cookie
+	Header unset Set-Cookie
+	# Allow CORS requests from status.flashii.net
+	Header set Access-Control-Allow-Origin "*.flashii.net"
+</IfModule>
