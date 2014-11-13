@@ -42,9 +42,9 @@ if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
 	<head>
 		<meta charset="utf-8" />
 		<title>Flashii Status</title>
-		<link href="/status.css" rel="stylesheet" type="text/css" />
+		<link href="status.css" rel="stylesheet" type="text/css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="/status.js" charset="utf-8" type="text/javascript"></script>
+		<script src="status.js" charset="utf-8" type="text/javascript"></script>
 	</head>
 	<body>
 		<a href="http://flashii.net/">
