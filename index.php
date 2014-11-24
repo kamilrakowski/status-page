@@ -32,19 +32,19 @@ if(isset($_GET['url']) && in_array($_GET['url'], $sites)) {
 
 // Redirect back to self so things don't kill itself (e.g. JavaScript things)
 if($_SERVER['REQUEST_URI'] != $_SERVER['PHP_SELF']) {
-	header('Location: /index.php');
-	print '<meta http-equiv="refresh" content="0; url=/index.php" />';
+	header('Location: ' . $_SERVER['PHP_SELF']);
+	print '<meta http-equiv="refresh" content="0; url=' . $_SERVER['PHP_SELF'] . '" />';
 	exit;
 }
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<title>Flashii Status</title>
-		<link href="/status.css" rel="stylesheet" type="text/css" />
+		<link href="status.css" rel="stylesheet" type="text/css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="/status.js" charset="utf-8" type="text/javascript"></script>
+		<script src="status.js" charset="utf-8" type="text/javascript"></script>
 	</head>
 	<body>
 		<a href="http://flashii.net/">
