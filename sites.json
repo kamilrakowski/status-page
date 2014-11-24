@@ -1,7 +1,8 @@
 {
-	"Flashii"		: "flashii.net",
+	"Flashii"			: "flashii.net",
 	"Flashii Chat"		: "chat.flashii.net",
 	"Flashii Content"	: "cdn.flashii.net",
 	"Flashii System"	: "sys.flashii.net",
-	"Flash.moe"		: "flash.moe"
+	"Flash.moe"			: "flash.moe",
+	"Satori Komeiji"	: "server.satori.flashii.net"
 }
