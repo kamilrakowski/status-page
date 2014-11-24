@@ -1,4 +1,3 @@
-Flashii Status Page
-===========
+Future location of http://status.flashii.net/
 
-Status page source code from the Flashii Status page located at http://status.flashii.net/
+Some "fixes" to the script are still required before being considered acceptable for public release.
