@@ -1,0 +1,35 @@
+body {
+	color: #AAA;
+	background: #111;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #77E;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #E77;
+}
+
+#checkAnnounce {
+	font-size: 15px;
+}
+
+.online {
+	color: #5E5;
+}
+
+.offline {
+	color: #E55;
+}
+
+.redir {
+	font-weight: bold;
+	color: #5E5;
+}
