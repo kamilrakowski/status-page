@@ -1,4 +1,4 @@
-var sites		= getJSON('/sites.json');
+var sites		= getJSON('sites.json');
 var sitecount	= Object.keys(sites).length;
 var ready		= false;
 
@@ -11,7 +11,7 @@ function getJSON(path) {
 
 function getStatusData(url) {
 	var Request = new XMLHttpRequest();
-	Request.open("GET", '/index.php?url=' + url, false);
+	Request.open("GET", 'index.php?url=' + url, false);
 	Request.send();
 	return JSON.parse(Request.responseText);
 }
